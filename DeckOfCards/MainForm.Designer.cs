@@ -30,25 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblSuit = new System.Windows.Forms.Label();
-            this.txtSuit = new System.Windows.Forms.TextBox();
-            this.lblRank = new System.Windows.Forms.Label();
-            this.txtRank = new System.Windows.Forms.TextBox();
             this.buttonCustom = new System.Windows.Forms.Button();
+            this.txtRank = new System.Windows.Forms.TextBox();
+            this.lblRank = new System.Windows.Forms.Label();
+            this.txtSuit = new System.Windows.Forms.TextBox();
+            this.lblSuit = new System.Windows.Forms.Label();
             this.grpDraw = new System.Windows.Forms.GroupBox();
-            this.txtDraw = new System.Windows.Forms.TextBox();
-            this.lblDraw = new System.Windows.Forms.Label();
             this.buttonDeal = new System.Windows.Forms.Button();
+            this.lblDraw = new System.Windows.Forms.Label();
+            this.txtDraw = new System.Windows.Forms.TextBox();
             this.grpDealt = new System.Windows.Forms.GroupBox();
-            this.lvDealt = new System.Windows.Forms.ListView();
-            this.columnDealtSuit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnDealtRank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblDealt = new System.Windows.Forms.Label();
+            this.lvDealt = new System.Windows.Forms.ListView();
             this.grpDeck = new System.Windows.Forms.GroupBox();
-            this.lblDeck = new System.Windows.Forms.Label();
             this.lvDeck = new System.Windows.Forms.ListView();
-            this.columnDeckSuit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnDeckRank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblDeck = new System.Windows.Forms.Label();
             this.buttonViewDeck = new System.Windows.Forms.Button();
             this.buttonShuffle = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
@@ -74,46 +70,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Card";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // lblSuit
-            // 
-            this.lblSuit.AutoSize = true;
-            this.lblSuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSuit.Location = new System.Drawing.Point(15, 36);
-            this.lblSuit.Name = "lblSuit";
-            this.lblSuit.Size = new System.Drawing.Size(37, 20);
-            this.lblSuit.TabIndex = 0;
-            this.lblSuit.Text = "S&uit";
-            this.lblSuit.Click += new System.EventHandler(this.lblSuit_Click);
-            // 
-            // txtSuit
-            // 
-            this.txtSuit.Location = new System.Drawing.Point(86, 30);
-            this.txtSuit.Name = "txtSuit";
-            this.txtSuit.Size = new System.Drawing.Size(100, 31);
-            this.txtSuit.TabIndex = 1;
-            this.toolTipMain.SetToolTip(this.txtSuit, "Enter the card suit");
-            this.txtSuit.TextChanged += new System.EventHandler(this.txtSuit_TextChanged);
-            // 
-            // lblRank
-            // 
-            this.lblRank.AutoSize = true;
-            this.lblRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank.Location = new System.Drawing.Point(15, 85);
-            this.lblRank.Name = "lblRank";
-            this.lblRank.Size = new System.Drawing.Size(47, 20);
-            this.lblRank.TabIndex = 2;
-            this.lblRank.Text = "&Rank";
-            this.lblRank.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtRank
-            // 
-            this.txtRank.Location = new System.Drawing.Point(86, 84);
-            this.txtRank.Name = "txtRank";
-            this.txtRank.Size = new System.Drawing.Size(100, 31);
-            this.txtRank.TabIndex = 3;
-            this.toolTipMain.SetToolTip(this.txtRank, "Enter the card rank");
             // 
             // buttonCustom
             // 
@@ -126,6 +82,42 @@
             this.toolTipMain.SetToolTip(this.buttonCustom, "Add a custom card (suit and rank) to the deck");
             this.buttonCustom.UseVisualStyleBackColor = true;
             // 
+            // txtRank
+            // 
+            this.txtRank.Location = new System.Drawing.Point(86, 84);
+            this.txtRank.Name = "txtRank";
+            this.txtRank.Size = new System.Drawing.Size(100, 31);
+            this.txtRank.TabIndex = 3;
+            this.toolTipMain.SetToolTip(this.txtRank, "Enter the card rank");
+            // 
+            // lblRank
+            // 
+            this.lblRank.AutoSize = true;
+            this.lblRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank.Location = new System.Drawing.Point(15, 85);
+            this.lblRank.Name = "lblRank";
+            this.lblRank.Size = new System.Drawing.Size(47, 20);
+            this.lblRank.TabIndex = 2;
+            this.lblRank.Text = "&Rank";
+            // 
+            // txtSuit
+            // 
+            this.txtSuit.Location = new System.Drawing.Point(86, 30);
+            this.txtSuit.Name = "txtSuit";
+            this.txtSuit.Size = new System.Drawing.Size(100, 31);
+            this.txtSuit.TabIndex = 1;
+            this.toolTipMain.SetToolTip(this.txtSuit, "Enter the card suit");
+            // 
+            // lblSuit
+            // 
+            this.lblSuit.AutoSize = true;
+            this.lblSuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuit.Location = new System.Drawing.Point(15, 36);
+            this.lblSuit.Name = "lblSuit";
+            this.lblSuit.Size = new System.Drawing.Size(37, 20);
+            this.lblSuit.TabIndex = 0;
+            this.lblSuit.Text = "S&uit";
+            // 
             // grpDraw
             // 
             this.grpDraw.Controls.Add(this.buttonDeal);
@@ -137,26 +129,6 @@
             this.grpDraw.Size = new System.Drawing.Size(352, 107);
             this.grpDraw.TabIndex = 1;
             this.grpDraw.TabStop = false;
-            this.grpDraw.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // txtDraw
-            // 
-            this.txtDraw.Location = new System.Drawing.Point(86, 41);
-            this.txtDraw.Name = "txtDraw";
-            this.txtDraw.Size = new System.Drawing.Size(100, 31);
-            this.txtDraw.TabIndex = 6;
-            this.toolTipMain.SetToolTip(this.txtDraw, "Enter how many cards to deal from deck");
-            this.txtDraw.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // lblDraw
-            // 
-            this.lblDraw.AutoSize = true;
-            this.lblDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDraw.Location = new System.Drawing.Point(14, 48);
-            this.lblDraw.Name = "lblDraw";
-            this.lblDraw.Size = new System.Drawing.Size(46, 20);
-            this.lblDraw.TabIndex = 5;
-            this.lblDraw.Text = "&Draw";
             // 
             // buttonDeal
             // 
@@ -169,6 +141,24 @@
             this.toolTipMain.SetToolTip(this.buttonDeal, "Deal");
             this.buttonDeal.UseVisualStyleBackColor = true;
             // 
+            // lblDraw
+            // 
+            this.lblDraw.AutoSize = true;
+            this.lblDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDraw.Location = new System.Drawing.Point(14, 48);
+            this.lblDraw.Name = "lblDraw";
+            this.lblDraw.Size = new System.Drawing.Size(46, 20);
+            this.lblDraw.TabIndex = 5;
+            this.lblDraw.Text = "&Draw";
+            // 
+            // txtDraw
+            // 
+            this.txtDraw.Location = new System.Drawing.Point(86, 41);
+            this.txtDraw.Name = "txtDraw";
+            this.txtDraw.Size = new System.Drawing.Size(100, 31);
+            this.txtDraw.TabIndex = 6;
+            this.toolTipMain.SetToolTip(this.txtDraw, "Enter how many cards to deal from deck");
+            // 
             // grpDealt
             // 
             this.grpDealt.Controls.Add(this.lblDealt);
@@ -178,32 +168,6 @@
             this.grpDealt.Size = new System.Drawing.Size(350, 230);
             this.grpDealt.TabIndex = 2;
             this.grpDealt.TabStop = false;
-            // 
-            // lvDealt
-            // 
-            this.lvDealt.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnDealtSuit,
-            this.columnDealtRank});
-            this.lvDealt.FullRowSelect = true;
-            this.lvDealt.GridLines = true;
-            this.lvDealt.HideSelection = false;
-            this.lvDealt.Location = new System.Drawing.Point(59, 94);
-            this.lvDealt.Name = "lvDealt";
-            this.lvDealt.Size = new System.Drawing.Size(206, 115);
-            this.lvDealt.TabIndex = 8;
-            this.toolTipMain.SetToolTip(this.lvDealt, "Shows all cards that have been dealt");
-            this.lvDealt.UseCompatibleStateImageBehavior = false;
-            this.lvDealt.View = System.Windows.Forms.View.Details;
-            // 
-            // columnDealtSuit
-            // 
-            this.columnDealtSuit.Text = "Suit";
-            this.columnDealtSuit.Width = 100;
-            // 
-            // columnDealtRank
-            // 
-            this.columnDealtRank.Text = "Rank";
-            this.columnDealtRank.Width = 100;
             // 
             // lblDealt
             // 
@@ -215,6 +179,19 @@
             this.lblDealt.TabIndex = 1;
             this.lblDealt.Text = "Cards Dealt";
             // 
+            // lvDealt
+            // 
+            this.lvDealt.FullRowSelect = true;
+            this.lvDealt.GridLines = true;
+            this.lvDealt.HideSelection = false;
+            this.lvDealt.Location = new System.Drawing.Point(59, 94);
+            this.lvDealt.Name = "lvDealt";
+            this.lvDealt.Size = new System.Drawing.Size(206, 115);
+            this.lvDealt.TabIndex = 8;
+            this.toolTipMain.SetToolTip(this.lvDealt, "Shows all cards that have been dealt");
+            this.lvDealt.UseCompatibleStateImageBehavior = false;
+            this.lvDealt.View = System.Windows.Forms.View.Details;
+            // 
             // grpDeck
             // 
             this.grpDeck.Controls.Add(this.lvDeck);
@@ -225,21 +202,8 @@
             this.grpDeck.TabIndex = 3;
             this.grpDeck.TabStop = false;
             // 
-            // lblDeck
-            // 
-            this.lblDeck.AutoSize = true;
-            this.lblDeck.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeck.Location = new System.Drawing.Point(129, 39);
-            this.lblDeck.Name = "lblDeck";
-            this.lblDeck.Size = new System.Drawing.Size(77, 31);
-            this.lblDeck.TabIndex = 0;
-            this.lblDeck.Text = "Deck";
-            // 
             // lvDeck
             // 
-            this.lvDeck.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnDeckSuit,
-            this.columnDeckRank});
             this.lvDeck.FullRowSelect = true;
             this.lvDeck.GridLines = true;
             this.lvDeck.HideSelection = false;
@@ -251,15 +215,15 @@
             this.lvDeck.UseCompatibleStateImageBehavior = false;
             this.lvDeck.View = System.Windows.Forms.View.Details;
             // 
-            // columnDeckSuit
+            // lblDeck
             // 
-            this.columnDeckSuit.Text = "Suit";
-            this.columnDeckSuit.Width = 120;
-            // 
-            // columnDeckRank
-            // 
-            this.columnDeckRank.Text = "Rank";
-            this.columnDeckRank.Width = 140;
+            this.lblDeck.AutoSize = true;
+            this.lblDeck.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeck.Location = new System.Drawing.Point(129, 39);
+            this.lblDeck.Name = "lblDeck";
+            this.lblDeck.Size = new System.Drawing.Size(77, 31);
+            this.lblDeck.TabIndex = 0;
+            this.lblDeck.Text = "Deck";
             // 
             // buttonViewDeck
             // 
@@ -320,7 +284,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reggie\'s Deck Builder!";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.grpDraw.ResumeLayout(false);
@@ -348,13 +311,9 @@
         private System.Windows.Forms.GroupBox grpDealt;
         private System.Windows.Forms.ListView lvDealt;
         private System.Windows.Forms.Label lblDealt;
-        private System.Windows.Forms.ColumnHeader columnDealtSuit;
-        private System.Windows.Forms.ColumnHeader columnDealtRank;
         private System.Windows.Forms.GroupBox grpDeck;
         private System.Windows.Forms.Label lblDeck;
         private System.Windows.Forms.ListView lvDeck;
-        private System.Windows.Forms.ColumnHeader columnDeckSuit;
-        private System.Windows.Forms.ColumnHeader columnDeckRank;
         private System.Windows.Forms.Button buttonViewDeck;
         private System.Windows.Forms.Button buttonShuffle;
         private System.Windows.Forms.Button buttonReset;
