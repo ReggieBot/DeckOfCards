@@ -136,13 +136,13 @@ namespace DeckOfCards
         {
             bool valid = true;
 
-            if (string.IsNullOrEmpty(suit))
+            if (string.IsNullOrWhiteSpace(suit))
             {
                 MessageBox.Show("Suit can't be empty!", "Invalid suit", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 valid = false;
             }
 
-            if (string.IsNullOrEmpty(rank))
+            if (string.IsNullOrWhiteSpace(rank))
             {
                 MessageBox.Show("Rank can't be empty!", "Invalid Rank", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 valid = false;
@@ -157,7 +157,7 @@ namespace DeckOfCards
         private bool IsDrawAmountValid(string drawText)
         {
             // check if blank
-            if (string.IsNullOrEmpty(drawText))
+            if (string.IsNullOrWhiteSpace(drawText))
             {
                 MessageBox.Show("Draw amount can't be empty", "Invalid Draw", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
