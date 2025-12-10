@@ -190,7 +190,7 @@
             this.lvDealt.TabIndex = 8;
             this.toolTipMain.SetToolTip(this.lvDealt, "Shows all cards that have been dealt");
             this.lvDealt.UseCompatibleStateImageBehavior = false;
-            this.lvDealt.View = System.Windows.Forms.View.Details;
+            this.lvDealt.View = System.Windows.Forms.View.List;
             // 
             // grpDeck
             // 
@@ -213,7 +213,7 @@
             this.lvDeck.TabIndex = 9;
             this.toolTipMain.SetToolTip(this.lvDeck, "Show all cards in the deck");
             this.lvDeck.UseCompatibleStateImageBehavior = false;
-            this.lvDeck.View = System.Windows.Forms.View.Details;
+            this.lvDeck.View = System.Windows.Forms.View.List;
             // 
             // lblDeck
             // 
