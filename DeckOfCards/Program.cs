@@ -1,4 +1,10 @@
-﻿using System;
+﻿// Deck of Cards Project: COSC2100
+// Reggie Brown
+// December 10, 2025
+// Professor Fabian
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
